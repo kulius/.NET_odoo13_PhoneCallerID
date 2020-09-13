@@ -1,0 +1,48 @@
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\demo\obj\Debug\ResolveAssemblyReference.cache
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\demo\obj\Debug\demo.Form1.resources
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\demo\obj\Debug\demo.Properties.Resources.resources
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\demo\obj\Debug\demo.csproj.GenerateResource.Cache
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\demo\bin\Debug\demo.exe
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\demo\bin\Debug\demo.pdb
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\demo\obj\Debug\demo.exe
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\demo\obj\Debug\demo.pdb
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\obj\Debug\demo.exe
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\obj\Debug\demo.pdb
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\bin\Debug\demo.exe
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\bin\Debug\demo.pdb
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\obj\Debug\ResolveAssemblyReference.cache
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\obj\Debug\demo.Form1.resources
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\obj\Debug\demo.Properties.Resources.resources
+E:\Workspaces\AD800\Project\SDK Demo\C#\demo\demo\obj\Debug\demo.csproj.GenerateResource.Cache
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Debug\demo.exe
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Debug\demo.pdb
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Debug\ResolveAssemblyReference.cache
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Debug\demo.Form1.resources
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Debug\demo.Properties.Resources.resources
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Debug\demo.csproj.GenerateResource.Cache
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\bin\Debug\demo.exe
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\bin\Debug\demo.pdb
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Release\ResolveAssemblyReference.cache
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Release\demo.Form1.resources
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Release\demo.Properties.Resources.resources
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Release\demo.csproj.GenerateResource.Cache
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\bin\Release\demo.exe
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\bin\Release\demo.pdb
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Release\demo.exe
+D:\Workspaces\VC\AD800\SDK\AD800 Demo SourceCode\C#\demo\demo\obj\Release\demo.pdb
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Release\demo.exe
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Release\demo.pdb
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Debug\demo.exe
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Debug\demo.pdb
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\bin\Release\demo.exe
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\bin\Release\demo.pdb
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Release\ResolveAssemblyReference.cache
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Release\demo.Form1.resources
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Release\demo.Properties.Resources.resources
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Release\demo.csproj.GenerateResource.Cache
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\bin\Debug\demo.exe
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\bin\Debug\demo.pdb
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Debug\ResolveAssemblyReference.cache
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Debug\demo.Form1.resources
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Debug\demo.Properties.Resources.resources
+D:\Workspaces\VC\AD800\SDK\AD800-SDK-20120424\Demo SourceCode\C#\demo\demo\obj\Debug\demo.csproj.GenerateResource.Cache
