@@ -647,7 +647,8 @@ namespace demo
                         StringBuilder szBuff = new StringBuilder(128);
                         AD800_GetCallerId(iChannel, szBuff, 64);
                         listView1.Items[iChannel].SubItems[(int)LIST_COLUMN.LISTCOL_CALLERID].Text = szBuff.ToString();
-                        ShowPop(szBuff.ToString());
+                        //ShowPop(szBuff.ToString());
+                        ShowNotify(szBuff.ToString());
                     }
                     break;
 
@@ -1066,7 +1067,8 @@ namespace demo
 
         private void button_pop_Click(object sender, EventArgs e)
         {
-            ShowPop("0918769015");
+            ShowNotify("0918769015");
+            //ShowNotify("052300241");
         }
 
         private void ShowPop(string msg)
@@ -1095,12 +1097,10 @@ namespace demo
 
                 NpgsqlDataReader rdr = cmd.ExecuteReader();
 
-                
                 while (rdr.Read())
                 {
                     cname = cname + rdr.GetString(1)+",";
                 }
-
             }
 
             PopupNotifier popup = new PopupNotifier();
@@ -1119,6 +1119,96 @@ namespace demo
             listView2.Items.Insert(0,item);
             
 
+        }
+
+        private void ShowNotify(string msg)
+        {
+
+            DateTime.Now.ToShortTimeString();
+            DateTime dt = DateTime.Now;
+
+            Configuration config = System.Configuration.ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            //根據Key讀取<add>元素的Value
+            string connstr = config.AppSettings.Settings["connectionstring"].Value;
+
+            //string connstr = @"Server=localhost;Database=odoo13_customers;User Id=postgres;Password=postgres;";
+
+            string cname = "";
+            using (NpgsqlConnection conn = new NpgsqlConnection(connstr))
+            {
+                conn.Open();
+
+                string sql = "SELECT  * FROM res_partner where mobile like @mobile  or phone like @mobile or x_company_fax like @mobile or x_extra_phone like @mobile or x_extra_phone1 like @mobile or x_extra_phone2 like @mobile or x_extra_phone3 like @mobile ";
+                var cmd = new NpgsqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@mobile", "%" + msg + "%");
+                cmd.Prepare();
+
+                NpgsqlDataReader rdr = cmd.ExecuteReader();
+                var partner_id = 1;
+                while (rdr.Read())
+                {
+                    cname = cname + rdr.GetString(1) + ",";
+                    partner_id = rdr.GetInt32(0);
+                }
+                conn.Close();
+
+                conn.Open();
+                using (var inscmd = new NpgsqlCommand("INSERT INTO res_partner_calls (name,calls,callstime,partner_id) VALUES (@name,@calls,@callstime,@partner_id)", conn))
+                {
+                    inscmd.Parameters.AddWithValue("@name", cname);
+                    inscmd.Parameters.AddWithValue("@calls", msg);
+                    inscmd.Parameters.AddWithValue("@callstime", dt);
+                    inscmd.Parameters.AddWithValue("@partner_id", partner_id);
+                    inscmd.Prepare();
+                    inscmd.ExecuteNonQuery();
+                }
+                conn.Close();
+            }
+            
+            PopupNotifier popup = new PopupNotifier();
+            popup.TitleText = dt.ToString();
+            popup.ContentText = cname + "來電" + msg;
+            popup.Delay = 1000000;
+            popup.ContentFont = new System.Drawing.Font("Tahoma", 18F);
+            popup.TitleFont = new System.Drawing.Font("Tahoma", 12F);
+            popup.Popup();
+            
+
+            notifyIcon1.BalloonTipText = dt.ToString();
+            notifyIcon1.BalloonTipTitle = cname + "來電" + msg;
+
+            notifyIcon1.ShowBalloonTip(3000);
+
+
+
+            var item = new ListViewItem($"{msg}");
+            item.SubItems.Add($"{cname}");
+            item.SubItems.Add($"{dt.ToString()}");
+            listView2.Items.Insert(0, item);
+        }
+
+        private void notifyIcon1_MouseMove(object sender, MouseEventArgs e)
+        {
+           // notifyIcon1.ShowBalloonTip(3000);
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Minimized)
+            {
+                this.notifyIcon1.Visible = true;
+                this.Hide();
+            }
+            else
+            {
+                this.notifyIcon1.Visible = false;
+            }
+        }
+
+        private void notifyIcon1_DoubleClick(object sender, EventArgs e)
+        {
+            this.Show();
+            this.WindowState = FormWindowState.Normal;
         }
     }
 }
